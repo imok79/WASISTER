@@ -3,63 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>결제 연동용 임시 홈페이지</title>
+  <title>WASISTER 온라인 쇼핑몰</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
+      font-family: sans-serif;
+      margin: 0;
+      background: #f8f8f8;
       padding: 20px;
-      line-height: 1.6;
-      background-color: #f4f4f4;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
     }
     h1 {
       color: #333;
     }
-    .section {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
     }
-    .section h2 {
-      color: #555;
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .price {
+      color: #d33;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .buy-btn {
+      margin-top: 10px;
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>OOO 결제 서비스 안내</h1>
+  <header>
+    <h1>WASISTER 쇼핑몰</h1>
+    <p>PG 연동 심사용 샘플 페이지 - 의류 10종</p>
+  </header>
 
-  <div class="section">
-    <h2>사업자 정보</h2>
-    <p>상호명: OOO</p>
-    <p>대표자: 홍길동</p>
-    <p>사업자등록번호: 123-45-67890</p>
-    <p>통신판매업신고번호: 2025-서울강남-0000</p>
-    <p>연락처: 010-1234-5678</p>
-    <p>이메일: example@email.com</p>
-    <p>주소: 서울특별시 강남구 테헤란로 123</p>
-  </div>
-
-  <div class="section">
-    <h2>서비스 소개</h2>
-    <p>본 서비스는 OOO 앱을 통해 디지털 콘텐츠를 제공하며, 고객은 앱 내에서 간편하게 결제 후 콘텐츠를 이용할 수 있습니다.</p>
-  </div>
-
-  <div class="section">
-    <h2>이용약관</h2>
-    <p>고객은 본 서비스를 이용함으로써 회사의 이용약관에 동의한 것으로 간주합니다. 본 서비스는 회원가입 후 사용 가능하며, 저작권 보호 콘텐츠에 대한 무단 배포는 금지되어 있습니다.</p>
-  </div>
-
-  <div class="section">
-    <h2>환불 및 취소 정책</h2>
-    <p>디지털 콘텐츠 특성상 결제 완료 후 환불은 불가합니다. 단, 서비스 장애나 결제 오류 등 특별한 사유가 있을 경우 고객센터를 통해 환불 요청이 가능합니다.</p>
-  </div>
-
-  <div class="section">
-    <h2>개인정보처리방침</h2>
-    <p>회사는 고객의 개인정보를 최소한으로 수집하며, 수집된 정보는 결제 및 서비스 제공을 위해서만 사용됩니다. 고객은 언제든지 개인정보 열람 및 삭제를 요청할 수 있습니다.</p>
-  </div>
+  <section class="product-grid">
+    <!-- 반복 상품 샘플 10개 -->
+    <!-- 이미지는 예시용 무료 이미지 링크 사용 -->
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?tshirt" alt="옷1">
+      <div class="product-name">화이트 티셔츠</div>
+      <div class="price">₩19,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?hoodie" alt="옷2">
+      <div class="product-name">기모 후드티</div>
+      <div class="price">₩29,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?jacket" alt="옷3">
+      <div class="product-name">캐주얼 자켓</div>
+      <div class="price">₩49,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?pants" alt="옷4">
+      <div class="product-name">슬림핏 바지</div>
+      <div class="price">₩34,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?skirt" alt="옷5">
+      <div class="product-name">롱스커트</div>
+      <div class="price">₩28,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?jeans" alt="옷6">
+      <div class="product-name">청바지</div>
+      <div class="price">₩35,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?dress" alt="옷7">
+      <div class="product-name">캐주얼 원피스</div>
+      <div class="price">₩42,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?coat" alt="옷8">
+      <div class="product-name">롱 코트</div>
+      <div class="price">₩89,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?sweater" alt="옷9">
+      <div class="product-name">니트 스웨터</div>
+      <div class="price">₩25,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/featured/?blouse" alt="옷10">
+      <div class="product-name">블라우스</div>
+      <div class="price">₩22,000</div>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+  </section>
 </body>
 </html>
